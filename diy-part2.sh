@@ -18,3 +18,6 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 
 # Modify hostname (Opsional, kalau mau ganti nama router)
 sed -i 's/OpenWrt/KrstwnWRTx/g' package/base-files/files/bin/config_generate
+
+# Add kiddin9 opkg repository
+echo 'src/gz kiddin9 https://dl.openwrt.ai/latest/packages/x86_64/kiddin9' >> package/base-files/files/etc/opkg/customfeeds.conf
